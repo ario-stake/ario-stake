@@ -2,7 +2,7 @@
 Import-Module ActiveDirectory
 
 # Get all domain computers
-$DomainComputers = Get-ADComputer -Filter *
+$DomainComputers = Get-ADComputer -Filter * -Server Asterdmhealthcare.local
 
 # Loop through each computer
 foreach ($Computer in $DomainComputers) {
